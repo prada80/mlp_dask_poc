@@ -1,0 +1,18 @@
+
+worker:
+  name: worker
+  image:
+    repository: sujittah/dask-custom
+    tag: 2023.12.1
+    pullPolicy: Always  
+  serviceAccountName: dask-access
+  serviceAnnotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::141134438799:role/iisc-capstone-rca-dask-s3-access  
+
+scheduler:
+  name: scheduler
+  image:
+    repository: sujittah/dask-custom
+    tag: 2023.12.1
+    pullPolicy: Always
+  

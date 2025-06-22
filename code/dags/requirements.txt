@@ -1,0 +1,9 @@
+boto3
+pandas
+great_expectations>=1.4.2
+scikit-learn
+matplotlib
+seaborn
+dask[complete]
+s3fs
+drain3

@@ -1,0 +1,46 @@
+apiserver:
+  service:
+    type: NodePort
+    nodePort: 30008
+  resources:
+    limits:
+      cpu: 300m
+      memory: 300Mi
+
+webserver:
+  service:
+    type: NodePort
+    nodePort: 30080
+  resources:
+    limits:
+      cpu: 300m
+      memory: 300Mi
+
+fileserver:
+  service:
+    type: NodePort
+    nodePort: 30081
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+
+redis:
+  resources:
+    limits:
+      cpu: 200m
+      memory: 256Mi
+
+mongodb:
+  architecture: standalone
+  resources:
+    limits:
+      cpu: 400m
+      memory: 512Mi
+
+elasticsearch:
+  enabled: true
+  resources:
+    limits:
+      cpu: 600m
+      memory: 600Mi
