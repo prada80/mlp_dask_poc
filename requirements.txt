@@ -1,4 +1,4 @@
 boto3
 pandas
 scikit-learn
-dask[complete]
+dask
